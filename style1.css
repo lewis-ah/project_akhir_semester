@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    min-height: 100vh;
+}
+.container{
+    background: black;
+    width: 550px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid aqua;
+    padding: 0 30px;
+    border-radius: 10px;
+}
+.container .box-login{
+    background: transparent;
+    width: 100%;
+}
+.box-login .page-box{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page-box .page-title{
+    text-align: center;
+    color: white;
+}
+.page-title h2{
+    font-size: 32px;
+
+}
+.page-title p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.page-box .page-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 0;
+
+}
+.page-input input{
+    margin: 20px 0;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.page-box .Forgot{
+    position: relative;
+    width: 100%;
+    top: -40px;
+}
+.forgot a{
+    color: white;
+    text-decoration: none;
+}
+.Forgot a:hover{
+    color: aqua;
+}
+.page-box .btn-login{
+    position: relative;
+    top: -20px;
+    width: 100%;
+}
+.btn-login button{
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    background: aqua;
+    opacity: 80%;
+    font-weight: 500;
+}
+.btn-login button:hover{
+    background: aquamarine;
+}
+.page-box .create{
+    width: 100%;
+
+}
+.create p{
+    color: white;
+
+}
+.create p a{
+    text-decoration: none;
+    color: white;
+
+}
+.create p a:hover{
+    color: aqua;
+}
+
+@media only screen and (max-width:576px){
+    .container{
+        width: 100vh;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .container .box-login{
+        position: absolute;
+        top: 80px;
+        padding: 0 30px;
+    }
+    .page-title h2{
+        font-size: 25px;
+    }
+    .page-title p{
+        font-size: 14px;
+    }
+    .page-input input{
+        font-size: 12px;
+        padding: 15px;
+    }
+    .page-box .Forgot a{
+        font-size: 12px;
+    }
+    .btn-login button{
+        font-size: 16px;
+    }
+    .page-box .create{
+        font-size: 12px;
+    }
+}
